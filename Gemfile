@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rake'
+gem 'slim'
 gem 'hanami',       '~> 1.2'
 gem 'hanami-model', '~> 1.2'
 
