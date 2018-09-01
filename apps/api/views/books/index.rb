@@ -2,10 +2,12 @@ module Api::Views::Books
   class Index
     include Api::View
 
-    def as_json
-      books.map do |book|
-        {title: book.title, author: book.author}
-      end
+    def x
+      "x"
+    end
+
+    def render_method
+      "The data is rendered by Jbuilder"
     end
   end
 end
