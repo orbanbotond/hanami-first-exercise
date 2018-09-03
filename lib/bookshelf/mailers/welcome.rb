@@ -13,6 +13,10 @@ class Mailers::Welcome
     book.title
   end
 
+  def prepare
+    mail.attachments['invoice.pdf'] = File.read File.join(Hanami.root, "public", "at1.pdf")
+  end
+
 private
 
   def welcome_subject
