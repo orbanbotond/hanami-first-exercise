@@ -35,12 +35,16 @@ Hanami.configure do
     root 'lib/bookshelf/mailers'
 
     # See http://hanamirb.org/guides/mailers/delivery
-    delivery :test
+    # delivery :test
   end
 
   environment :development do
     # See: http://hanamirb.org/guides/projects/logging
     logger level: :debug
+
+    mailer do
+      delivery :smtp, address: "127.0.0.1", port: 1025
+    end
   end
 
   environment :production do
