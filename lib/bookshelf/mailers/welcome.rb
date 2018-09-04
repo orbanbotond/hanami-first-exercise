@@ -17,6 +17,10 @@ class Mailers::Welcome
     mail.attachments['invoice.pdf'] = File.read File.join(Hanami.root, "public", "at1.pdf")
   end
 
+  def copyrightowner
+    "Boti Mail C&C"
+  end
+
 private
 
   def welcome_subject
