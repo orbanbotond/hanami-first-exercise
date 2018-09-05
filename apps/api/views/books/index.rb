@@ -1,4 +1,4 @@
-require_relative '../../presenters/books_representer'
+require_relative '../../presenters/books_entity'
 require "ostruct"
 
 module Api::Views::Books
@@ -9,11 +9,11 @@ module Api::Views::Books
       books_struct = OpenStruct.new
       books_struct.books = books
       books_struct.render_method = render_method
-      raw BooksRepresenter.new(books_struct).to_json
+      raw BooksEntity.new(books_struct).to_json
     end
 
     def render_method
-      "The data is rendered by Jbuilder"
+      "The data is rendered by Grape Entities"
     end
   end
 end

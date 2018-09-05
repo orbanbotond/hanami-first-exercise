@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rake'
 gem 'slim'
-gem 'roar'
+gem 'grape-entity'
 gem 'hanami',       '~> 1.2'
 gem 'hanami-model', '~> 1.2'
 gem 'multi_json'
