@@ -13,7 +13,7 @@ module Api::Views::Books
     end
 
     def render_method
-      "The data is rendered by Jbuilder"
+      "The data is rendered by Roar"
     end
   end
 end
