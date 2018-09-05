@@ -1,13 +1,15 @@
-require_relative '../../presenters/book_representer'
+require_relative '../../presenters/books_representer'
+require "ostruct"
 
 module Api::Views::Books
   class Index
     include Api::View
 
     def render
-      # binding.pry
-      # "[{title: \"asd\"}]"
-      raw books.map{|book| BookRepresenter.new(book).to_json }.to_s
+      books_struct = OpenStruct.new
+      books_struct.books = books
+      books_struct.render_method = render_method
+      raw BooksRepresenter.new(books_struct).to_json
     end
 
     def render_method
