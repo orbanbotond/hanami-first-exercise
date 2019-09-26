@@ -20,7 +20,7 @@ GEM
     coderay (1.1.2)
     concurrent-ruby (1.0.5)
     debug_inspector (0.0.3)
-    dotenv (2.5.0)
+    dotenv (2.7.5)
     dry-configurable (0.7.0)
       concurrent-ruby (~> 1.0)
     dry-container (0.6.0)
@@ -185,7 +185,7 @@ PLATFORMS
 
 DEPENDENCIES
   capybara
-  dotenv (~> 2.0)
+  dotenv (~> 2.7)
   hanami (~> 1.2)
   hanami-model (~> 1.2)
   hanami-webconsole
