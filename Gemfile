@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'rake'
 gem 'slim'
 gem 'sassc'
-gem 'hanami',       '~> 1.2'
+gem 'hanami',       '~> 1.3'
 gem 'hanami-model', '~> 1.2'
 
 gem 'sqlite3'
